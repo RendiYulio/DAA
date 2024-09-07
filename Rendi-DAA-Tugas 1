@@ -2,12 +2,18 @@
     Algoritma: Langkah 1: Temukan faktor terbesar yang sama antara dua angka (FPB).
                Langkah 2: Hitung KPK dengan rumus:
 
-    Pseudecode: 1. Mulai
-                2. Input a = 3, b = 4
-                3. Tentukan FPB dari a dan b menggunakan algoritma Euclid:
-                4. Hitung KPK: (a * b) / FPB
-                5. Output hasil KPK
-                6. Selesai
+    Pseudecode:
+Fungsi KPK(a, b)
+    Jika a > b kemudian
+        max = a
+    Lain
+        max = b
+    Sementara (true)
+        Jika max mod a = 0 dan max mod b = 0 kemudian
+            Kembali max
+        max = max + 1
+Akhir Fungsi
+KPK(3,4)
 
 2. Menukar Posisi Dua Variabel (Manggis dan Pisang di Piring)
    Algoritma: Langkah 1: Gunakan piring ketiga sebagai tempat sementara.
@@ -15,12 +21,21 @@
               Langkah 3: Pindahkan pisang dari piring 2 ke piring 1.
               Langkah 4: Pindahkan manggis dari piring 3 ke piring 2.
 
-Pseudecode: 1. Mulai
-            2. Input x = "Manggis" (piring 1), y = "Pisang" (piring 2)
-            4. Set x = y
-            5. Set y = x
-            6. Output nilai x dan y setelah ditukar
-            7. Selesai
+Pseudecode:
+Fungsi Tukar(var1, var2)
+    temp = var1
+    var1 = var2
+    var2 = temp
+Akhir Fungsi
+// Kasus
+piring1 = 'manggis'
+piring2 = 'pisang'
+piring3 = ''
+// Menukar posisi
+Tukar(piring1, piring2)
+// Pindahkan manggis ke piring3
+piring3 = piring1
+piring1 = ''
 
 3. Menghitung Luas Segitiga (Alas = 25, Tinggi = 30)
   Algoritma: Langkah 1: Diketahui alas = 25, tinggi = 30.
@@ -28,30 +43,45 @@ Pseudecode: 1. Mulai
             Langkah 3: Hitung luas segitiga dengan rumus alas*tinggi/2
             Langkah 4: Tampilkan hasil perhitnugan
 
-  Pseudecode: 1. Input alas = 25, tinggi = 30
-              2. Hitung luas segitiga: Luas = (alas * tinggi) / 2
-              3. Output hasil luas
-              4. Selesai
+  Pseudecode:
+Fungsi LuasSegitiga(alas, tinggi)
+    luas = (alas * tinggi) / 2
+    Kembali luas
+Akhir Fungsi
+// Diketahui
+alas = 25
+tinggi = 30
+luasSegitiga = LuasSegitiga(alas, tinggi)
 
 4. Menghitung Luas Jajar Genjang (Panjang = 5, Tinggi = 3)
    Algoritma: langkah 1: Diketahui panjang= 5 dan tinggi= 3
               langkah 2: Hitung luas jajar genjang dengan rumus panjang*tinggi
               langkah 3: Cetak hasil perhitungan luas jajar genjang
 
-  Pseudecode: 1. Mulai
-              2. Input panjang = 5, tinggi = 3
-              3. Hitung luas jajar genjang: Luas = panjang * tinggi
-              4. Output hasil luas
-              5. Selesai
+  Pseudecode:
+Algoritma LuasJajarGenjang
+    Input: panjang, tinggi
+    Luas = panjang * tinggi
+    Kembali Luas
+Akhir Algoritma
+Panjang = 5
+Tinggi = 3
+Luas = LuasJajarGenjang(Panjang, Tinggi)
 
 5. Menghitung Volume Tabung (Jari-jari = 3, Tinggi = 5)
 Algoritma: Langakah 1: Masukkan jari" tabung= 3 dan tinggi= 5
            langkah 2 : Hitung volume tabung menggunakan rumus Volume = π * (jari-jari^2) * tinggi
            langkah 3: Cetak hasil perhitungan volume tabung
 
-Pseudecode: 1. Input jari-jari = 3, tinggi = 5
-            2. Hitung volume tabung: Volume = π * (jari-jari^2) * tinggi
-            3. Output hasil volume
+Pseudocode:
+Algoritma VolumeTabung
+    Input: jariJari, tinggi
+    Volume = π * (jariJari^2) * tinggi
+    Kembali Volume
+Akhir Algoritma
+JariJari = 3
+Tinggi = 5
+Volume = VolumeTabung(JariJari, Tinggi)
 
 6. Menghitung Volume Kerucut (Diameter = 5, Tinggi = 4)
 Algoritma: langkah 1: Masukkan diameter dan tinggi kerucut
@@ -59,8 +89,13 @@ Algoritma: langkah 1: Masukkan diameter dan tinggi kerucut
           langkah 3: Hitung volume kerucut menggunakan rumus (1/3) * π * (jari-jari^2) * tinggi
           langkah 4: Cetak hasil perhitungan volume kerucut
 
-Pseudecode: 
-            1. Input diameter = 5, tinggi = 4
-            2. Hitung jari-jari: jari-jari = diameter / 2
-            3. Hitung volume kerucut: Volume = (1/3) * π * (jari-jari^2) * tinggi
-
+Pseudecode:
+Algoritma VolumeKerucut
+    Input: diameter, tinggi
+    jariJari = diameter / 2
+    Volume = (1/3) * π * (jariJari^2) * tinggi
+    Kembali Volume
+Akhir Algoritma
+Diameter = 5
+Tinggi = 4
+Volume = VolumeKerucut(Diameter, Tinggi)
