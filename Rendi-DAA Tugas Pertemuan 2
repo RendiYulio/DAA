@@ -1,0 +1,11 @@
+1. Jika getFirst diperoleh dari myList [0], bagaimana memperoleh getSecond?
+Jika getFirst diperoleh dari myList[0], maka untuk memperoleh getSecond, Dapat mengakses elemen kedua dari myList, yaitu myList[1].
+
+2. Jika getFirst diperoleh dari myList [0], bagaimana memperoleh getLast (isi terakhir)?
+Jika getFirst diperoleh dari myList[0], maka untuk memperoleh getLast (isi terakhir) dari myList, Dapat menggunakan indeks terakhir dari myList.
+
+3. getSum adalah perintah untuk mendapatkan hasil jumlah seluruh angka. Bagaimana jika kita membutuhkan fungsi getKali untuk mengalikan seluruh angka?
+Fungsi getKali mengambil sebuah array atau list angka dan mengembalikan hasil perkalian seluruh angka dalam array tersebut.
+
+4. getSum adalah perintah untuk mendapatkan hasil jumlah seluruh angka. Bagaimana jika kita membutuhkan fungsi getBagi untuk membagikan seluruh angka?
+fungsi getBagi mengambil sebuah array atau list angka dan sebuah divisor, kemudian mengembalikan hasil pembagian seluruh angka dalam array tersebut dengan divisor yang diberikan.
